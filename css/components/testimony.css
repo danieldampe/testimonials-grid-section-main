@@ -1,0 +1,94 @@
+/* 
+// *** *** *** Testimony *** *** ***
+*/
+.testimony {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2.5rem;
+    border-radius: 15px;
+}
+
+.testimony:first-child {
+    background-image: url(../../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 0%;
+}
+
+.testimony:first-child { background-color: var(--color-moderate-violet); }
+.testimony:nth-child(2) { background-color: var(--color-very-dark-grayish-blue); }
+.testimony:nth-child(3) { background-color: var(--color-white); }
+.testimony:nth-child(4) { background-color: var(--color-very-dark-blackish-blue); }
+.testimony:last-child { background-color: var(--color-white); }
+
+@media screen and (min-width: 1024px) {
+    .testimony:first-child { grid-area: a; }
+    .testimony:nth-child(2) { grid-area: b; }
+    .testimony:nth-child(3) { grid-area: c; }
+    .testimony:nth-child(4) { grid-area: d; }
+    .testimony:last-child { grid-area: e; }
+}
+
+/* 
+// *** *** *** User *** *** ***
+*/
+.testimony__user {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.testimony-user-div__name { 
+    font-size: 1.15rem;
+    color: var(--color-white); 
+}
+
+.testimony:nth-child(3)
+.testimony-user-div__label,
+.testimony:nth-child(3)
+.testimony__content,
+.testimony:last-child
+.testimony-user-div__label,
+.testimony:last-child
+.testimony__content {
+    color: #0006;
+}
+
+.testimony:nth-child(3)
+.testimony-user-div__name,
+.testimony:nth-child(3)
+.testimony__title,
+.testimony:last-child
+.testimony-user-div__name,
+.testimony:last-child
+.testimony__title {
+    color: var(--color-very-dark-grayish-blue);
+}
+
+.testimony-user-div__label { color: #fff5; }
+
+.testimony-user__img { 
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+    border: 3px solid #fff5;
+    border-radius: 50%;
+}
+
+.testimony:nth-child(4)
+.testimony-user__img {
+    border-color: var(--color-moderate-violet); 
+}
+
+/* 
+// *** *** *** Title *** *** ***
+*/
+.testimony__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+/* 
+// *** *** *** Content *** *** ***
+*/
+.testimony__content { color: #fff7; }

@@ -1,0 +1,22 @@
+/* 
+// *** *** *** Testimonials Section *** *** ***
+*/
+.testimonials-section {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: min-content;
+    gap: 2.3rem;
+    width: min(85%, 1200px);
+    margin-inline: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .testimonials-section {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, min-content);
+        grid-template-areas: 
+            "a a b e"
+            "c d d e";
+        gap: 2rem 2.5rem;
+    }
+}
